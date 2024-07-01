@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f6fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+article >  header{
+    border-radius: 1rem;
+}
+
+
+  header {
+    color: #f5f6fa;
+    background-color: #2f3640;
+    padding: 16px 0;
+  }
+  
+  header h1 {
+    color: #f5f6fa;
+    font-size: 2rem;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #f5f6fa;
+    text-decoration: none;
+    transition: all 1s;
+
+  }
+  
+  nav ul li a:hover {
+    box-shadow: 0 1px;
+  }
+
+
+  header > time{
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .articles article {
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .articles article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .articles article h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .articles article p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  
+  .articles article a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 1s;
+  }
+  
+  .articles article a:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration: underline;
+  }
+  
+  #esportes {
+    background-color: rgba(0, 255, 0, 0.1);
+  }
+  
+  #economia {
+    background-color: #f0f06d;
+  }
+  
+  #entretenimento {
+    background-color: #ff6347;
+  }
+  
+  #tecnologia {
+    background-color: #1e90ff;
+  }
+  
+  @media (max-width: 1024px) {
+    .articles article {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .articles article {
+      width: 100%;
+    }
+  }
+  
